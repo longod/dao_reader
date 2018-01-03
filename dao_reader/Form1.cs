@@ -14,7 +14,7 @@ namespace dao_reader {
         string exe_dir;
         string config_path;
         string lookup_path;
-        Loockup lookup;
+        Lookup lookup;
         Setting.Config config = new Setting.Config();
         SearchBox search;
         SearchBox.Option search_option = new SearchBox.Option();
@@ -35,7 +35,7 @@ namespace dao_reader {
             exe_path = Application.ExecutablePath;
             exe_dir = System.IO.Path.GetDirectoryName( exe_path );
             config_path = exe_dir + @"\config.xml";
-            lookup_path = exe_dir + @"\loockup.xml";
+            lookup_path = exe_dir + @"\lookup.xml";
 
             if ( System.IO.File.Exists( config_path ) ) {
                 Setting.Config temp = xml.Xml.Read<Setting.Config>( config_path );
@@ -65,7 +65,7 @@ namespace dao_reader {
             }
 
             if ( System.IO.File.Exists( lookup_path ) ) {
-                lookup = xml.Xml.Read<Loockup>( lookup_path );
+                lookup = xml.Xml.Read<Lookup>( lookup_path );
             }
             // 影響は無いが例外が出る
             //http://yk.tea-nifty.com/netdev/2009/03/xmlserializer-a.html
@@ -158,9 +158,9 @@ namespace dao_reader {
 
                 string jpfile = null;
                 if ( lookup != null && tabControl.SelectedTab.Name != null ) {
-                    foreach ( Loockup.Module mod in lookup.module ) {
+                    foreach ( Lookup.Module mod in lookup.module ) {
                         if ( mod.name == tabControl.SelectedTab.Name ) {
-                            foreach ( Loockup.Module.Set set in mod.set ) {
+                            foreach ( Lookup.Module.Set set in mod.set ) {
                                 if ( set.min_id <= id ) {
                                     // 終端は0にとりあえず、さらにmax_idは含めない
                                     if ( set.max_id == 0 || id < set.max_id ) {
@@ -405,9 +405,9 @@ namespace dao_reader {
                         uint id = cn.id;
                         string jpfile = null;
                         if ( lookup != null && tabControl.SelectedTab.Name != null ) {
-                            foreach ( Loockup.Module mod in lookup.module ) {
+                            foreach ( Lookup.Module mod in lookup.module ) {
                                 if ( mod.name == tabControl.SelectedTab.Name ) {
-                                    foreach ( Loockup.Module.Set set in mod.set ) {
+                                    foreach ( Lookup.Module.Set set in mod.set ) {
                                         if ( set.min_id <= id ) {
                                             // 終端は0にとりあえず、さらにmax_idは含めない
                                             if ( set.max_id == 0 || id < set.max_id ) {
@@ -693,9 +693,9 @@ namespace dao_reader {
                 uint id = cn.id; // コピーだと問題無いのかー？たしかにnodeが消えた場合は値だし危ないよな
                 string jpfile = null;
                 if ( lookup != null && tabControl.SelectedTab.Name != null ) {
-                    foreach ( Loockup.Module mod in lookup.module ) {
+                    foreach ( Lookup.Module mod in lookup.module ) {
                         if ( mod.name == tabControl.SelectedTab.Name ) {
-                            foreach ( Loockup.Module.Set set in mod.set ) {
+                            foreach ( Lookup.Module.Set set in mod.set ) {
                                 if ( set.min_id <= id ) {
                                     // 終端は0にとりあえず、さらにmax_idは含めない
                                     if ( set.max_id == 0 || id < set.max_id ) {

@@ -5,8 +5,9 @@ using System.Text;
 using System.Xml.Serialization;
 
 namespace dao_reader {
+    //DAOzNumList.xlsを元に、日本語化プロジェクトに対応するファイル番号を表示するための対応テーブル
     [XmlType(@"dacr")]
-    public class Loockup {
+    public class Lookup {
         //public Module module = new Module();
 
         public class Module {

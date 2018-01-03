@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<dacr xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <module name="core_en-us">
+    <pair file="000" min_id="53703" max_id="272891" />
+    <pair file="001" min_id="272891" max_id="298752" />
+    <pair file="002" min_id="298752" max_id="341527" />
+    <pair file="003" min_id="341527" max_id="348931" />
+    <pair file="004" min_id="348931" max_id="377707" />
+    <pair file="005" min_id="377707" max_id="398053" />
+    <pair file="006" min_id="398053" max_id="0" />
+  </module>
+  <module name="singleplayer_en-us">
+    <pair file="000" min_id="159" max_id="14377" />
+    <pair file="001" min_id="14377" max_id="24894" />
+    <pair file="002" min_id="24894" max_id="31441" />
+    <pair file="003" min_id="31441" max_id="37480" />
+    <pair file="004" min_id="37480" max_id="41077" />
+    <pair file="005" min_id="41077" max_id="44256" />
+    <pair file="006" min_id="44256" max_id="49363" />
+    <pair file="007" min_id="49363" max_id="53409" />
+    <pair file="008" min_id="53409" max_id="56390" />
+    <pair file="009" min_id="56390" max_id="64516" />
+    <pair file="00A" min_id="64516" max_id="70530" />
+    <pair file="00B" min_id="70530" max_id="73269" />
+    <pair file="00C" min_id="73269" max_id="83781" />
+    <pair file="00D" min_id="83781" max_id="88828" />
+    <pair file="00E" min_id="88828" max_id="92698" />
+    <pair file="00F" min_id="92698" max_id="95906" />
+    <pair file="00G" min_id="95906" max_id="101186" />
+    <pair file="00H" min_id="101186" max_id="113973" />
+    <pair file="00I" min_id="113973" max_id="118036" />
+    <pair file="00J" min_id="118036" max_id="127647" />
+    <pair file="00K" min_id="127647" max_id="133434" />
+    <pair file="00L" min_id="133434" max_id="137451" />
+    <pair file="00M" min_id="137451" max_id="145347" />
+    <pair file="00N" min_id="145347" max_id="152548" />
+    <pair file="00O" min_id="152548" max_id="162431" />
+    <pair file="00P" min_id="162431" max_id="174439" />
+    <pair file="00Q" min_id="174439" max_id="182006" />
+    <pair file="00R" min_id="182006" max_id="193455" />
+    <pair file="00S" min_id="193455" max_id="216586" />
+    <pair file="00T" min_id="216586" max_id="231221" />
+    <pair file="00U" min_id="231221" max_id="236077" />
+    <pair file="00V" min_id="236077" max_id="242151" />
+    <pair file="00W" min_id="242151" max_id="250298" />
+    <pair file="00X" min_id="250298" max_id="259338" />
+    <pair file="00Y" min_id="259338" max_id="267808" />
+    <pair file="00Z" min_id="267808" max_id="276625" />
+    <pair file="010" min_id="276625" max_id="292812" />
+    <pair file="011" min_id="292812" max_id="310585" />
+    <pair file="012" min_id="310585" max_id="325047" />
+    <pair file="013" min_id="325047" max_id="332688" />
+    <pair file="014" min_id="332688" max_id="338554" />
+    <pair file="015" min_id="338554" max_id="354755" />
+    <pair file="016" min_id="354755" max_id="361619" />
+    <pair file="017" min_id="361619" max_id="372825" />
+    <pair file="018" min_id="372825" max_id="382215" />
+    <pair file="019" min_id="382215" max_id="392792" />
+    <pair file="01A" min_id="392792" max_id="0" />
+  </module>
+</dacr>
